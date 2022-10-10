@@ -5,10 +5,10 @@ namespace UcuRideShare
 {
     public abstract class Usuario
     {
-        string Nombre {get;set;}
-        string Apellido {get;set;}
+        public string Nombre {get;set;}
+        public string Apellido {get;set;}
 
-        string Cedula {get;set;}
+        public string Cedula {get;set;}
         public List<double> Calificaciones {get;set;}
         public virtual void Calificar(Usuario usuario, double calificacion)
         {
