@@ -14,9 +14,14 @@ namespace UcuRideShare
         {
 
         }
-        public virtual void GetCalificacion()
+        public double GetCalificacion()
         {
-
+            double SumaCalificaiones = 0;
+            foreach(double calificaion in this.Calificaciones)
+            {
+                SumaCalificaiones += calificaion;
+            }
+            return SumaCalificaiones / this.Calificaciones.Count;
         }
 
     }
