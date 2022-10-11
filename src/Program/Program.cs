@@ -8,19 +8,20 @@ namespace UcuRideShare
     {
         static void Main(string[] args)
         {
-            Usuario pasajero1 = new Pasajero("Pepito", "Grillo", "11111111");
+            Usuario pasajero1 = new Pasajero("Armando", "Esteban Quito", "11111111");
             Usuario pasajero2 = new Pasajero("Marcelo", "Iripino", "22222222");
             Usuario pasajero3 = new Pasajero("Juan", "Maffei", "33333333");
             Usuario conductor1 = new ConductorPool("Bruno", "Zefferino", "44444444", "Corsita", "Me llamo Bruno =)", 3);
             UcuRideSharing rideshare = new UcuRideSharing();
+
             string foto = @"prueba1.jpg";
             string foto2 = @"prueba2.jpg";
 
+            
             rideshare.Add(pasajero1, foto);
             rideshare.Add(pasajero2, foto);
             rideshare.Add(pasajero3, foto);
             rideshare.Add(conductor1, foto2);
-
 
             /*
             En éste método deberas mostrar un ejemplo de funcionamiento de tu programa an pseudocódigo. A continuación te 
